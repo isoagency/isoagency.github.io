@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=".ISO — агентство путешествий во времени. Машина времени работает с помощью дисков: на каждом записан конкретный промежуток времени. Вставляешь диск — и попадаешь в другую эпоху.">
+    <title>.ISO — Time Travel Agency</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+    <!-- JetBrains Mono from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- === Прогресс-бар прокрутки === -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- === Шапка === -->
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="#top" class="logo" aria-label=".ISO — на главную">
+                <img src="assets/logo-white.png" alt=".ISO" class="logo-img" width="110" height="48">
+            </a>
+            <nav class="nav" role="navigation" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">О проекте</a></li>
+                    <li><a href="#how" class="nav-link">Как работает</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- === HERO === -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="hero-brand-block reveal">
+                    <div class="hero-logo">
+                        <img src="assets/logo-white.png" alt=".ISO Logo" width="280" height="122">
+                    </div>
+                    <div class="hero-divider-line" aria-hidden="true"></div>
+                </div>
+                <div class="hero-text-block reveal">
+                    <h1 id="hero-title" class="hero-title">
+                        <span class="hero-line">Агентство путешествий</span>
+                        <span class="hero-line">во времени</span>
+                    </h1>
+                    <p class="hero-tagline" aria-hidden="true">
+                        <span class="typing-text" data-text="Burn an era"></span><span class="cursor" aria-hidden="true">█</span>
+                    </p>
+                </div>
+                <div class="hero-meta reveal" aria-hidden="true">
+                    <span class="meta-item">EST. 2026</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">CLASSIFIED</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">.ISO</span>
+                </div>
+                <div class="hero-scroll" aria-hidden="true">
+                    <span class="scroll-text">SCROLL</span>
+                    <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- === О ПРОЕКТЕ === -->
+        <section class="section section-about" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-index">01</span>
+                    <h2 id="about-title" class="section-title">О ПРОЕКТЕ</h2>
+                </header>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p>.ISO — это агентство путешествий во времени, вдохновлённое эстетикой 1980-х.</p>
+                        <p>Машина времени работает с помощью дисков: на каждом записан конкретный промежуток времени. Вставляешь диск — и попадаешь в другую эпоху.</p>
+                    </div>
+                    <div class="about-visual reveal">
+                        <figure class="about-diagram portrait-figure">
+                            <img src="assets/bruuh.jpg" alt="Обложка проекта .ISO" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === КАК РАБОТАЕТ === -->
+        <section class="section section-how" id="how" aria-labelledby="how-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-index">02</span>
+                    <h2 id="how-title" class="section-title">КАК ЭТО РАБОТАЕТ</h2>
+                </header>
+                <div class="how-grid">
+                    <article class="how-card reveal">
+                        <div class="how-visual portrait-visual">
+                            <img src="assets/new1.png" alt="Носители и айдентика .ISO" loading="lazy">
+                        </div>
+                        <div class="how-content">
+                            <h3 class="how-title">НОСИТЕЛИ И АЙДЕНТИКА</h3>
+                            <p class="how-desc"> Сетка и радужная волна демонстрируют процесс перемещения во времени. Волна как бы деформирует пространство, открывая портал в другую эпоху.</p>
+                        </div>
+                    </article>
+                    <article class="how-card reveal">
+                        <div class="how-visual portrait-visual">
+                            <img src="assets/new2.png" alt="Диски и физические носители времени" loading="lazy">
+                        </div>
+                        <div class="how-content">
+                            <h3 class="how-title">ФИЗИЧЕСКИЕ ДИСКИ</h3>
+                            <p class="how-desc">Каждый диск содержит записанный хронологический промежуток. Можно отправиться либо в революцию 1917, либо в киберпанк 2077</p>
+                        </div>
+                    </article>
+                    <article class="how-card reveal">
+                        <div class="how-visual portrait-visual">
+                            <img src="assets/new3.png" alt="Интерфейс и навигация системы" loading="lazy">
+                        </div>
+                        <div class="how-content">
+                            <h3 class="how-title">ПЛАКАТЫ И МАТЕРИАЛЫ</h3>
+                            <p class="how-desc">На данном графическом образе представлен процесс взаимодействия пользователя с машиной времени.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- === ГАЛЕРЕЯ === -->
+        <section class="section section-gallery" id="gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-index">03</span>
+                    <h2 id="gallery-title" class="section-title">ГАЛЕРЕЯ</h2>
+                </header>
+                <p class="gallery-hint" aria-hidden="true">КЛИКНИТЕ НА КАДР ДЛЯ РАЗВЁРНУТОГО ПРОСМОТРА</p>
+                <div class="gallery-grid" role="list" aria-label="Слайды проекта .ISO">
+                    <figure class="gallery-item reveal" role="listitem" data-index="0">
+                        <img src="assets/preza12.jpg" alt="Малый фирменный стиль" loading="lazy">
+                        <figcaption><span class="caption-index">01</span> Малый фирменный стиль</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="1">
+                        <img src="assets/preza13.jpg" alt="Карандаши" loading="lazy">
+                        <figcaption><span class="caption-index">02</span> Карандаши</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="2">
+                        <img src="assets/preza14.jpg" alt="Брелоки" loading="lazy">
+                        <figcaption><span class="caption-index">03</span> Брелоки</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="3">
+                        <img src="assets/preza15.jpg" alt="Диск" loading="lazy">
+                        <figcaption><span class="caption-index">04</span> Диск</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="4">
+                        <img src="assets/preza16.jpg" alt="Traveler ID" loading="lazy">
+                        <figcaption><span class="caption-index">05</span> Traveler ID</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="5">
+                        <img src="assets/preza17.jpg" alt="Traveler Pass" loading="lazy">
+                        <figcaption><span class="caption-index">06</span> Traveler Pass</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="6">
+                        <img src="assets/preza18.jpg" alt="Билборд" loading="lazy">
+                        <figcaption><span class="caption-index">07</span> Билборд</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="7">
+                        <img src="assets/preza19.jpg" alt="Шоппер" loading="lazy">
+                        <figcaption><span class="caption-index">08</span> Шоппер</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="8">
+                        <img src="assets/preza20.jpg" alt="Вывеска" loading="lazy">
+                        <figcaption><span class="caption-index">09</span> Вывеска</figcaption>
+                    </figure>
+                    <figure class="gallery-item reveal" role="listitem" data-index="9">
+                        <img src="assets/preza21.jpg" alt="Фура" loading="lazy">
+                        <figcaption><span class="caption-index">10</span> Фура</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- === КОНТАКТЫ === -->
+        <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-index">04</span>
+                    <h2 id="contact-title" class="section-title">АВТОР / КОНТАКТЫ</h2>
+                </header>
+                <div class="contact-content reveal">
+                    <div class="contact-card">
+                        <div class="author-name">ИГОРЬ ОРЛОВ</div>
+                        <div class="contact-links">
+                            <a href="mailto:igorioorlov@gmail.com" class="contact-link" target="_blank" rel="noopener">
+                                <span class="link-label">ПОЧТА</span>
+                                <span class="link-value">igorioorlov@gmail.com</span>
+                            </a>
+                            <a href="https://t.me/igoriguess" class="contact-link" target="_blank" rel="noopener">
+                                <span class="link-label">TELEGRAM</span>
+                                <span class="link-value">@igoriguess</span>
+                            </a>
+                            <a href="https://deziiign.com/account/f58d77ced99849ae8c972a6674cb6252" class="contact-link" target="_blank" rel="noopener">
+                                <span class="link-label">DESIIIGN</span>
+                                <span class="link-value">deziiign.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- === Подвал === -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <img src="assets/logo-white.png" alt=".ISO" class="footer-logo" width="80" height="35">
+                <p class="footer-copy">© 2026 .ISO TIME TRAVEL AGENCY. CLASSIFIED.</p>
+            </div>
+            <div class="footer-right">
+                <p class="footer-tech">JETBRAINS MONO / HTML / CSS / JS</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- === Модалка галереи === -->
+    <div class="modal" id="galleryModal" role="dialog" aria-modal="true" aria-label="Просмотр слайда" hidden>
+        <button class="modal-close" aria-label="Закрыть" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <button class="modal-nav modal-prev" aria-label="Предыдущий слайд" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <div class="modal-content">
+            <figure class="modal-figure">
+                <img id="modalImage" src="" alt="">
+                <figcaption id="modalCaption"></figcaption>
+            </figure>
+        </div>
+        <button class="modal-nav modal-next" aria-label="Следующий слайд" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="modal-counter" aria-hidden="true">
+            <span id="modalCurrent">1</span> / <span id="modalTotal">10</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
