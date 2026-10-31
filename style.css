@@ -160,6 +160,11 @@ ul {
     opacity: 0.8;
 }
 
+#about .section-index { color: var(--color-pink); }
+#how .section-index { color: var(--color-purple); }
+#gallery .section-index { color: var(--color-blue); }
+#contact .section-index { color: var(--color-lime); }
+
 .section-title {
     font-size: var(--fs-3xl);
     font-weight: 700;
@@ -257,6 +262,10 @@ ul {
 .nav-link.active::after {
     width: 100%;
 }
+
+.nav-link[href="#about"]::after { background: var(--color-pink); }
+.nav-link[href="#how"]::after { background: var(--color-purple); }
+.nav-link[href="#gallery"]::after { background: var(--color-blue); }
 
 /* Burger */
 .burger {
@@ -638,9 +647,20 @@ ul {
 }
 
 .gallery-item:hover {
-    border-color: var(--accent);
+    border-color: var(--hover-color, var(--accent));
     transform: translateY(-4px);
 }
+
+.gallery-item[data-index="0"] { --hover-color: var(--color-purple); }
+.gallery-item[data-index="1"] { --hover-color: var(--color-lime); }
+.gallery-item[data-index="2"] { --hover-color: var(--color-pink); }
+.gallery-item[data-index="3"] { --hover-color: var(--color-blue); }
+.gallery-item[data-index="4"] { --hover-color: var(--color-pink); }
+.gallery-item[data-index="5"] { --hover-color: var(--color-purple); }
+.gallery-item[data-index="6"] { --hover-color: var(--color-blue); }
+.gallery-item[data-index="7"] { --hover-color: var(--color-lime); }
+.gallery-item[data-index="8"] { --hover-color: var(--color-blue); }
+.gallery-item[data-index="9"] { --hover-color: var(--color-pink); }
 
 .gallery-item img {
     width: 100%;
@@ -733,9 +753,13 @@ ul {
 }
 
 .contact-link:hover {
-    border-color: var(--accent);
-    background: rgba(215, 223, 35, 0.02);
+    border-color: var(--hover-color, var(--accent));
+    background: var(--hover-bg, rgba(215, 223, 35, 0.02));
 }
+
+.contact-link:nth-child(1) { --hover-color: var(--color-pink); --hover-bg: rgba(255, 0, 193, 0.04); }
+.contact-link:nth-child(2) { --hover-color: var(--color-purple); --hover-bg: rgba(123, 63, 242, 0.04); }
+.contact-link:nth-child(3) { --hover-color: var(--color-blue); --hover-bg: rgba(49, 85, 255, 0.04); }
 
 .link-label {
     font-size: var(--fs-xs);
@@ -758,7 +782,7 @@ ul {
 }
 
 .contact-link:hover .link-value {
-    color: var(--accent);
+    color: var(--hover-color, var(--accent));
 }
 
 /* === Footer === */
